@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/GridLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="6"
+    android:useDefaultMargins="true"
+    android:background="@color/accent_material_dark">
+
+    <TextView
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="40dp"
+        android:layout_row="0"
+        android:text="ACCEDER"
+        android:textSize="32dip"
+        android:textColor="#000000"
+        android:layout_width="273dp" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:layout_row="1"
+        android:text="Usuario: "
+        android:textColor="#000000">
+    </TextView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/input1"
+        android:layout_row="1"
+        android:layout_column="2" />
+
+    <TextView
+        android:layout_column="0"
+        android:layout_gravity="right"
+        android:layout_row="2"
+        android:text="Contraseña: "
+        android:textColor="#000000">
+    </TextView>
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_column="1"
+        android:layout_columnSpan="2"
+        android:layout_row="2"
+        android:inputType="textPassword"
+        android:ems="8"
+        android:layout_width="218dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_row="3"
+        android:layout_column="2">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView6"
+            android:textColor="#ff0000" />
+
+        <Button
+            android:id="@+id/buttonIniciarSesion"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:text="Iniciar Sesión"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+
+    </LinearLayout>
+
+</GridLayout>
